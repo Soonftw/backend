@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const db = require("./queries.js");
 
+//TODO Error handle when adding the same plats twice.
+
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
